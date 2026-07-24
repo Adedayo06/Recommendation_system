@@ -1,0 +1,32 @@
+# Keep the build context (and image) small. The model serves from
+# models/recommender.pkl only — none of the raw data or tooling is needed.
+
+# Virtualenv — never ship the host's interpreter/packages.
+venv/
+
+# Raw + processed data (~1.4 GB of CSVs). Not read at serve time.
+data/
+
+# Notebooks and empty scaffold dirs — not part of the runtime.
+notebooks/
+docs/
+frontend/
+tests/
+
+# Python caches / build junk.
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# VCS and docs.
+.git/
+.gitignore
+*.md
+
+# Docker files themselves don't belong in the image.
+DockerFile
+Dockerfile
+.dockerignore

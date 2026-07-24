@@ -1,0 +1,15 @@
+# Dataset — now stored in S3, fetched on demand (see src/s3_data.py)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environment (should never be committed)
+venv/
+
+# Secrets — never commit AWS creds or env files
+.env
+.env.*
+*.pem

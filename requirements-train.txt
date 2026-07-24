@@ -1,0 +1,13 @@
+# Training / evaluation dependencies.
+#
+# Installs everything the serving image needs (via -r) plus the extras used
+# only when (re)training or evaluating the model — notably boto3, for pulling
+# the dataset from S3 (see src/s3_data.py).
+#
+# The Docker image installs requirements.txt ONLY, so boto3 never ships in the
+# serving container. Use this file for a training/dev environment:
+#     pip install -r requirements-train.txt
+
+-r requirements.txt
+
+boto3

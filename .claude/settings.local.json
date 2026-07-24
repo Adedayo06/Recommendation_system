@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(../venv/Scripts/python.exe evaluate_system.py)",
+      "Bash(../venv/Scripts/python.exe -c ' *)",
+      "Bash(../venv/Scripts/python.exe test_item_cf.py)",
+      "Bash(../venv/Scripts/python.exe -u evaluate_system.py)",
+      "Bash(../venv/Scripts/python.exe -u train_model.py)",
+      "Bash(awk '/NOW TRAINING/{f=1} f' \"C:\\\\Users\\\\ADEDAY~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-AdedayoAdenrele-Downloads-recommendation-system\\\\115fce16-42ee-4601-81d6-445535b48bc7\\\\tasks\\\\bu2a5ppuv.output\")"
+    ]
+  }
+}
