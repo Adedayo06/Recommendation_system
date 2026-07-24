@@ -13,3 +13,6 @@ venv/
 .env
 .env.*
 *.pem
+
+# Claude Code local settings (machine-specific)
+.claude/
